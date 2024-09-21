@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="cor-fundo" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja bem-vindo aos melhores jogos modificados!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <section id="carregando-conteudo" class="carregando-conteudo">
+        <button class="carregando-conteudo-fill">Carregando...</button>
+    </section>
+    <main id="main" class="main">
+        <header class="retangulo"></header>
+        <h1 class="boas-vindas">Bem Vindo(a)!</h1>
+        <section class="form-de-pontuacao">
+            <h2 class="form-titulo">Registre-se para obter a pontuação final!</h2>
+            <form id="form" class="form">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" minlength="2" required autocomplete="name">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" minlength="3" required autocomplete="email">
+                </div>
+                <button type="submit" class="botao-de-envio">Pontuar Meu Jogo!</button>
+            </form>
+        </section>
+        <section class="escolha-o-jogo">
+            <div class="campo-minado-diferente">
+                <h1 class="titulo-cmd">🧨!Campo Minado Diferente!🧨</h1>
+                <a href="campoMinado.html" class="ancora-cmd">Jogar!</a>
+            </div>
+            <div class="jogo-da-velha-diferente">
+                <h1 class="titulo-jvd">👵!Jogo da Velha Diferente!👵</h1>
+                <a href="" class="ancora-jvd">Jogar!</a>
+            </div>
+        </section>
+    </main>
+    <script src="cache.js"></script>
+    <script src="script.js"></script>
+    <script src="planilhaUsuários.js"></script>
+</body>
+</html>
