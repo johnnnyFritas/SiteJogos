@@ -14,8 +14,7 @@ const envioFormulario =(event)=> {
         headers: {
         'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data),
-        mode: 'no-cors'
+        body: JSON.stringify(data)
     })
     .then(response => response.text())
     .then(result => alert(result))
