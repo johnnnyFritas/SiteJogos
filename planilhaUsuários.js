@@ -9,13 +9,12 @@ const envioFormulario =(event)=> {
         email: email
     };
 
-    fetch("https://script.google.com/macros/s/AKfycbwONzykXdPcXeUmWkFpz-_QEc1yGdcG0wgK9p2jmc3natEAb6m__iynEkjrjQCIefrH/exec", {
+    fetch("http://localhost:3000/proxy", {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data),
-        mode: 'no-cors'
+        body: JSON.stringify(data)
     })
     .then(response => response.text())
     .then(result => alert(result))
